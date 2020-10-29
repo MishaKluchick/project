@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Signika:wght@600&display=swap'); 
+:root {
+    font-family: 'Poppins', sans-serif;
+    --main-color: black; --accent-color: #519AC9; --menu-color: #235565; scroll-behavior: smooth;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    color: var(--accent-color);
+    font-size: 12px;
+}
+h2 {
+    color: var(--main-color);
+    font-family: 'Signika', sans-serif;
+    font-size: 48px;
+}
+h5{
+    color: var(--menu-color);
+    font-family: 'Signika', sans-serif;
+    font-size: 48px;
+}
+
+/*first section*/
+.mobile-firstsection {
+    display: flex;
+    max-width: 350px;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.mobile-header {
+    background-position: left;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    min-width: 450px;
+}
+
+.desktop-container{
+    display:flex;
+}
+
+.background{
+    width:50%;
+}
+
+.desktop-firstsection {
+    display: flex;
+    max-width: 350px;
+    flex-direction: column;
+    margin: 5px;
+}
+
+@media (min-width: 768px){
+    .desktop-header{
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media (min-width: 768px) {
+  .mobile-header {
+     display: none;
+  } 
+  .desktop-header {
+      display: block;
+   }
+}
+@media (max-width: 768px) {
+  .mobile-header {
+     display: block;
+  } 
+  .desktop-header  {
+      display: none;
+   }
+   .background {
+       display: none;
+   }
+}
+
+/* About Us */
+.about-us-container{
+    display:flex;
+}
+
+.us{
+    width:50%
+}
+
+@media (max-width: 768px){
+    .about-us-container{
+        display:block;
+    }
+    .us{
+        width:100%
+    }
+}
+/* static */
+.static {
+    display:flex;
+    justify-content: space-around;
+}
+@media (max-width: 768px){
+    .static {
+        display: flex;
+        flex-direction: column;
+    }
+}
+/*Controls*/
+.button {
+    width: 50%;
+    padding: 1em 1.2em;
+    border: 0.1em solid white;
+    margin: 0.7em 0.3em 0.3em 0.3em;
+    border-radius: 0.12em;
+    color: white;
+    text-align: center;
+    transition: all 0.7s;
+    background-color: var(--menu-color);
+}
