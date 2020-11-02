@@ -8,6 +8,11 @@ p{
 }
 
 h1 {
+    color: var(--main-color);
+    font-family: 'Signika', sans-serif;
+    font-size: 48px;
+}
+h6{
     color: var(--accent-color);
     font-size: 12px;
 }
@@ -117,4 +122,101 @@ h5{
     text-align: center;
     transition: all 0.7s;
     background-color: var(--menu-color);
+}
+/* Button scrollUp */
+@media (min-width: 768px){
+.back_to_top {
+  font-size: 40px;
+  position: fixed;
+  bottom: 100px;
+  right: 40px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  align-content: center;
+  line-height: 30px;
+  background:  var(--accent-color);
+  color: var(--main-color);
+  cursor: pointer;
+  border-radius: 2px;
+  display: none;
+}
+
+.back_to_top:hover {
+  background: #e9ebec;
+}
+
+.back_to_top-show {
+  display: block;
+}
+}
+@media (max-width: 768px){
+    .back_to_top{
+        position: fixed;
+        bottom: 60px;
+        right: 40px;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        /* align-content: center; */
+        /* line-height: 30px; */
+        background:  var(--accent-color);
+        color: var(--main-color);
+        cursor: pointer;
+        border-radius: 2px;
+        display: none;
+    }   
+    .back_to_top:hover {
+        background: #e9ebec;
+    }
+
+    .back_to_top-show {
+    display: block;
+    }
+}
+/* services */
+.carousel{
+    text-align:center;
+}
+.carousel h4{
+    margin:30px;
+}
+
+/* reviews */
+.rev {
+    text-align: center;
+    margin: 70px
+}
+.img{
+    display: flex;
+    justify-content: center;
+}
+.rev h3{
+    margin:30px;
+}
+.partners img{
+    padding:50px;
+}
+.partext{
+    text-align: center;
+}
+.contact{
+    display: flex;
+}
+.contact .address{
+    width: 50%;
+}
+.contact form{
+    width: 50%;
+}
+@media(max-width: 768px){
+    .contact{
+        display:block;
+    }
+    .contact .address{
+        width: 100%;
+    }
+    .contact form{
+        width: 100%;
+    }
 }
