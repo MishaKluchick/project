@@ -158,8 +158,6 @@ h5{
         width: 30px;
         height: 30px;
         text-align: center;
-        /* align-content: center; */
-        /* line-height: 30px; */
         background:  var(--accent-color);
         color: var(--main-color);
         cursor: pointer;
@@ -218,5 +216,78 @@ h5{
     }
     .contact form{
         width: 100%;
+    }
+}
+/* footer{
+    display: flex;
+    justify-content: space-around;  
+} */
+.emblm{
+    width:70px;
+    margin:100px 0px 20px 0px;
+}
+.container .menu-item a {
+    color:#647A81 ;
+    margin:10px 10px 10px 0px;
+}
+.container .createdby{
+    color:#647A81;
+    font-size: 12px;
+    margin:100px 0px 20px 0px;
+}
+.menu{
+    background-color:#F8F9FA;
+}
+@media(max-width: 768px){
+    .container .menu-item a{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+/*price*/
+.prc{
+    display: flex;
+}
+.prc .workshour{
+    width:40%;
+    margin:20px;
+}
+.price{
+    width:60%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.prc .price .incoming{
+    display:flex;
+    /* align-content: center;
+    justify-content: center; */
+    
+}
+.prc .price .incoming h5{
+    margin:150px 10px 10px 10px;
+}
+@media(max-width: 768px){
+    .prc{
+        display: flex;
+        flex-direction: column;
+    }
+    .prc .workshour{
+        width:100%;
+        margin:20px;
+    }
+    .price{
+        width:100%;
+        display: flex;
+        align-content: center;
+        justify-content: center;
     }
 }
